@@ -1,0 +1,8 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.album-list, .photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

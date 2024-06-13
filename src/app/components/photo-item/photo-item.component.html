@@ -1,0 +1,13 @@
+<div class="photo-item">
+  <img [src]="photo.thumbnailUrl" [alt]="photo.title" (click)="openModal()">
+</div>
+
+<div *ngIf="isModalOpen" class="modal" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <img
+      [src]="photo.url"
+      alt="Magnified"
+      class="magnified-image"
+    />
+  </div>
+</div>
